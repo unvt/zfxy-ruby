@@ -27,3 +27,21 @@ def point2zfxy(z, h, lng, lat)
   point2zfxyArray(z, h, lng, lat).join('/')
 end
 
+def f2height(z, f)
+  f * H / n(z)
+end
+
+def x2lng(z, x)
+  360.0 * x / n(z) - 180.0
+end
+
+def y2lat(z, y)
+  rad = Math::atan(
+          Math::sinh(Math::PI * (1 - 2.0 * y / n(z))))
+  180.0 * (rad / Math::PI)
+end
+
+def zfxy2point(z, f, x, y)
+  [z, f2height(z, f), x2lng(z, x), y2lat(z, y)]
+end
+
