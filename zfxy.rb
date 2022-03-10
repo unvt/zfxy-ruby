@@ -1,3 +1,5 @@
+require 'json'
+
 H = 2 ** 26
 
 def n(z)
@@ -43,5 +45,36 @@ end
 
 def zfxy2point(z, f, x, y)
   [z, f2height(z, f), x2lng(z, x), y2lat(z, y)]
+end
+
+def zfxy2bbox(z, f, x, y)
+  e = x2lng(z, x + 1)
+  w = x2lng(z, x)
+  s = y2lat(z, y + 1)
+  n = y2lat(z, y)
+  [w, s, e, n]
+end
+
+def zfxy2geojson(z, f, x, y)
+  bbox = zfxy2bbox(z, f, x, y)
+  f = {
+    :type => 'Feature',
+    :geometry => {
+      :type => 'Polygon',
+      :coordinates => [[
+        [bbox[0], bbox[3]],
+        [bbox[0], bbox[1]],
+        [bbox[2], bbox[1]],
+        [bbox[2], bbox[3]],
+        [bbox[0], bbox[3]]
+      ]]
+    },
+    :properties => {
+      :base => f2height(z, f),
+      :height => f2height(z, 1),
+      :code => "#{z}/#{f}/#{x}/#{y}"
+    }
+  }
+  JSON.dump(f)
 end
 
