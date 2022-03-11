@@ -78,3 +78,22 @@ def zfxy2geojson(z, f, x, y)
   JSON.dump(f)
 end
 
+def zfxy_parent(z, f, x, y)
+  [z - 1, f / 2, x / 2, y / 2]
+end
+
+def zfxy_children(z, f, x, y)
+  2.times {|df|
+    2.times {|dx|
+      2.times {|dy|
+        yield [
+          z + 1, 
+          2 * f + df,
+          2 * x + dx,
+          2 * y + dy
+        ]
+      }
+    }
+  }
+end
+
