@@ -11,7 +11,7 @@
     "zfxy": {
       "type": "vector",
       "tiles": [
-        "http://localhost:9967/zxy/{z}/{x}/{y}.pbf"
+        "https://unvt.github.io/zfxy-ruby/zxy/{z}/{x}/{y}.pbf"
       ],
       "maxzoom": 19,
       "minzoom": 8,
