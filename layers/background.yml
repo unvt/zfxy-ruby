@@ -1,0 +1,5 @@
+id: background
+type: background
+layout: {}
+paint:
+  background-color: hsl(222, 56%, 4%)

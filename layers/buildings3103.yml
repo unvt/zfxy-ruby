@@ -1,0 +1,19 @@
+source: gsibv-vectortile-source-1-4-16
+minzoom: 13
+id: buildings3103
+metadata:
+  name: 高層建物
+type: fill-extrusion
+source-layer: building
+filter:
+  - all
+  - - '=='
+    - ftCode
+    - 3103
+  - - '=='
+    - $type
+    - Polygon
+paint:
+  fill-extrusion-color: rgb(190,230,255)
+  fill-extrusion-opacity: 0.8
+  fill-extrusion-height: 60

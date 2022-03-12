@@ -1,0 +1,19 @@
+source: gsibv-vectortile-source-1-4-16
+minzoom: 13
+id: buildings3102
+metadata:
+  name: 堅ろう建物
+type: fill-extrusion
+source-layer: building
+filter:
+  - all
+  - - '=='
+    - ftCode
+    - 3102
+  - - '=='
+    - $type
+    - Polygon
+paint:
+  fill-extrusion-color: rgb(230,230,230)
+  fill-extrusion-opacity: 0.8
+  fill-extrusion-height: 18

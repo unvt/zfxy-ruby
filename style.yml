@@ -1,0 +1,121 @@
+version: 8
+center:
+  - 139.7379
+  - 35.6475
+zoom: 11.72
+bearing: -136.9
+pitch: 62
+sources:
+  zfxy:
+    type: vector
+    tiles:
+      - https://unvt.github.io/zfxy-ruby/zxy/{z}/{x}/{y}.pbf
+    maxzoom: 19
+    minzoom: 8
+    attribution: UNVT Community
+  seamlessphoto:
+    type: raster
+    tiles:
+      - https://maps.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg
+    tileSize: 256
+    maxzoom: 18
+    minzoom: 2
+    attribution: 地理院
+  gsibv-vectortile-source-1-4-16:
+    type: vector
+    tiles:
+      - https://x.optgeo.org/kagami/zxy/{z}/{x}/{y}.pbf
+    maxzoom: 16
+    minzoom: 4
+    attribution: 地理院
+  ise:
+    type: vector
+    tiles:
+      - https://x.optgeo.org/ise/zxy/{z}/{x}/{y}.pbf
+    minzoom: 5
+    maxzoom: 16
+    attribution: 地理院
+sprite: https://sprites.geolonia.com/basic
+glyphs: https://hfu.github.io/openmaptiles-fonts/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/seamlessphoto.yml
+  - !!inc/file layers/buildings4302.yml
+  - !!inc/file layers/buildings4301.yml
+  - !!inc/file layers/buildings3111.yml
+  - !!inc/file layers/buildings3112.yml
+  - !!inc/file layers/buildings3101.yml
+  - !!inc/file layers/buildings3102.yml
+  - !!inc/file layers/buildings3103.yml
+  - !!inc/file layers/m50100-150.yml
+  - !!inc/file layers/m50100-140.yml
+  - !!inc/file layers/m50100-344.yml
+  - !!inc/file layers/m50100-351.yml
+  - !!inc/file layers/m50100-352.yml
+  - !!inc/file layers/m50100-321.yml
+  - !!inc/file layers/m50100-322.yml
+  - !!inc/file layers/m50100-346.yml
+  - !!inc/file layers/m50100-343.yml
+  - !!inc/file layers/m50100-333.yml
+  - !!inc/file layers/m50100-345.yml
+  - !!inc/file layers/m51301.yml
+  - !!inc/file layers/m56376.yml
+  - !!inc/file layers/m100-140.yml
+  - !!inc/file layers/m100-212.yml
+  - !!inc/file layers/m100-314.yml
+  - !!inc/file layers/m100-315.yml
+  - !!inc/file layers/m100-316.yml
+  - !!inc/file layers/m100-333.yml
+  - !!inc/file layers/m100-334.yml
+  - !!inc/file layers/m100-346.yml
+  - !!inc/file layers/m1401.yml
+  - !!inc/file layers/m1402.yml
+  - !!inc/file layers/m1403.yml
+  - !!inc/file layers/m6376.yml
+  - !!inc/file layers/m100-344.yml
+  - !!inc/file layers/m2903.yml
+  - !!inc/file layers/m2904.yml
+  - !!inc/file layers/m100-110.yml
+  - !!inc/file layers/m100-120.yml
+  - !!inc/file layers/m100-210.yml
+  - !!inc/file layers/m100-220.yml
+  - !!inc/file layers/m100-311.yml
+  - !!inc/file layers/m100-312.yml
+  - !!inc/file layers/m100-313.yml
+  - !!inc/file layers/m100-321.yml
+  - !!inc/file layers/m100-322.yml
+  - !!inc/file layers/m100-323.yml
+  - !!inc/file layers/m100-331.yml
+  - !!inc/file layers/m100-332.yml
+  - !!inc/file layers/m100-343.yml
+  - !!inc/file layers/m100-345.yml
+  - !!inc/file layers/m100-347.yml
+  - !!inc/file layers/m100-351.yml
+  - !!inc/file layers/m100-352.yml
+  - !!inc/file layers/m100-353.yml
+  - !!inc/file layers/m100-411.yml
+  - !!inc/file layers/m100-412.yml
+  - !!inc/file layers/m100-421.yml
+  - !!inc/file layers/m100-431.yml
+  - !!inc/file layers/m100-441.yml
+  - !!inc/file layers/m100-531.yml
+  - !!inc/file layers/m100-612.yml
+  - !!inc/file layers/m100-631.yml
+  - !!inc/file layers/m100-651.yml
+  - !!inc/file layers/m100-681.yml
+  - !!inc/file layers/m2901.yml
+  - !!inc/file layers/m2910.yml
+  - !!inc/file layers/m2930.yml
+  - !!inc/file layers/m3207.yml
+  - !!inc/file layers/m3208.yml
+  - !!inc/file layers/m3205.yml
+  - !!inc/file layers/m3206.yml
+  - !!inc/file layers/m3211.yml
+  - !!inc/file layers/m3216.yml
+  - !!inc/file layers/m3218.yml
+  - !!inc/file layers/m3231.yml
+  - !!inc/file layers/m3232.yml
+  - !!inc/file layers/m3243.yml
+  - !!inc/file layers/m6331.yml
+  - !!inc/file layers/sky.yml
+  - !!inc/file layers/zfxy.yml

@@ -1,6 +1,4 @@
-require 'json'
-
-H = 2 ** 26
+H = 2 ** 25
 
 def n(z)
   2 ** z
@@ -72,10 +70,15 @@ def zfxy2geojson(z, f, x, y)
     :properties => {
       :base => f2height(z, f),
       :height => f2height(z, 1),
-      :code => "#{z}/#{f}/#{x}/#{y}"
+      #:code => "#{z}/#{f}/#{x}/#{y}",
+      :z => z,
+      :f => f,
+      :x => x,
+      :y => y,
+      :parity => (f + x + y) % 2
     }
   }
-  JSON.dump(f)
+  f
 end
 
 def zfxy_parent(z, f, x, y)

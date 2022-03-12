@@ -1,0 +1,19 @@
+source: gsibv-vectortile-source-1-4-16
+minzoom: 13
+id: buildings4301
+metadata:
+  name: 巨大構造物
+type: fill-extrusion
+source-layer: structurea
+filter:
+  - all
+  - - '=='
+    - ftCode
+    - 4301
+  - - '=='
+    - $type
+    - Polygon
+paint:
+  fill-extrusion-color: rgb(255,230,190)
+  fill-extrusion-opacity: 0.8
+  fill-extrusion-height: 60

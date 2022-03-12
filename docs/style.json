@@ -1,0 +1,4236 @@
+{
+  "version": 8,
+  "center": [
+    139.7379,
+    35.6475
+  ],
+  "zoom": 11.72,
+  "bearing": -136.9,
+  "pitch": 62,
+  "sources": {
+    "zfxy": {
+      "type": "vector",
+      "tiles": [
+        "http://localhost:9967/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "maxzoom": 19,
+      "minzoom": 8,
+      "attribution": "UNVT Community"
+    },
+    "seamlessphoto": {
+      "type": "raster",
+      "tiles": [
+        "https://maps.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
+      ],
+      "tileSize": 256,
+      "maxzoom": 18,
+      "minzoom": 2,
+      "attribution": "地理院"
+    },
+    "gsibv-vectortile-source-1-4-16": {
+      "type": "vector",
+      "tiles": [
+        "https://x.optgeo.org/kagami/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "maxzoom": 16,
+      "minzoom": 4,
+      "attribution": "地理院"
+    },
+    "ise": {
+      "type": "vector",
+      "tiles": [
+        "https://x.optgeo.org/ise/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 5,
+      "maxzoom": 16,
+      "attribution": "地理院"
+    }
+  },
+  "sprite": "https://sprites.geolonia.com/basic",
+  "glyphs": "https://hfu.github.io/openmaptiles-fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "layout": {},
+      "paint": {
+        "background-color": "hsl(222, 56%, 4%)"
+      }
+    },
+    {
+      "id": "seamlessphoto",
+      "type": "raster",
+      "source": "seamlessphoto",
+      "paint": {
+        "raster-contrast": 0.5,
+        "raster-brightness-max": 0.89,
+        "raster-fade-duration": 500
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 13,
+      "id": "buildings4302",
+      "metadata": {
+        "name": "タンク"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "structurea",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          4302
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(255,230,190)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 6
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 13,
+      "id": "buildings4301",
+      "metadata": {
+        "name": "巨大構造物"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "structurea",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          4301
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(255,230,190)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 60
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 14,
+      "id": "buildings3111",
+      "metadata": {
+        "name": "普通無壁舎"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          3111
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(255,230,190)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 6
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 13,
+      "id": "buildings3112",
+      "metadata": {
+        "name": "堅ろう無壁舎"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          3112
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(230,230,230)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 18
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 14,
+      "id": "buildings3101",
+      "metadata": {
+        "name": "普通建物"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          3101
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(255,230,190)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 6
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 13,
+      "id": "buildings3102",
+      "metadata": {
+        "name": "堅ろう建物"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          3102
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(230,230,230)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 18
+      }
+    },
+    {
+      "source": "gsibv-vectortile-source-1-4-16",
+      "minzoom": 13,
+      "id": "buildings3103",
+      "metadata": {
+        "name": "高層建物"
+      },
+      "type": "fill-extrusion",
+      "source-layer": "building",
+      "filter": [
+        "all",
+        [
+          "==",
+          "ftCode",
+          3103
+        ],
+        [
+          "==",
+          "$type",
+          "Polygon"
+        ]
+      ],
+      "paint": {
+        "fill-extrusion-color": "rgb(190,230,255)",
+        "fill-extrusion-opacity": 0.8,
+        "fill-extrusion-height": 60
+      }
+    },
+    {
+      "id": "m50100-150",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-150",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-140",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-140",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-344",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-344",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-351",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-351",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-352",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-352",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-321",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-321",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-322",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-322",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-346",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-346",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-343",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-343",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-333",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-333",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m50100-345",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m50100-345",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m51301",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m51301",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m56376",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m56376",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-140",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-140",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-212",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-212",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-314",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-314",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-315",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-315",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-316",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-316",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-333",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-333",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-334",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-334",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-346",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-346",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m1401",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m1401",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m1402",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m1402",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m1403",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m1403",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m6376",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m6376",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-344",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-344",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m2903",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m2903",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m2904",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m2904",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-110",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-110",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-120",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-120",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-210",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-210",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-220",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-220",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-311",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-311",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-312",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-312",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-313",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-313",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-321",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-321",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-322",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-322",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-323",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-323",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-331",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-331",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-332",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-332",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-343",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-343",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-345",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-345",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-347",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-347",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-351",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-351",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-352",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-352",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-353",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-353",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-411",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-411",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-412",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-412",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-421",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-421",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-431",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-431",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-441",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-441",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-531",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-531",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-612",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-612",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-631",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-631",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-651",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-651",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m100-681",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m100-681",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m2901",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m2901",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m2910",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m2910",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m2930",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m2930",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3207",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3207",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3208",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3208",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3205",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3205",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3206",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3206",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3211",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3211",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3216",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3216",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3218",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3218",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3231",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3231",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3232",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3232",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m3243",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m3243",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "m6331",
+      "type": "symbol",
+      "source": "ise",
+      "source-layer": "m6331",
+      "layout": {
+        "text-font": [
+          "Roboto Regular"
+        ],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-max-width": 16,
+        "text-rotation-alignment": "map",
+        "text-rotate": [
+          "*",
+          -1,
+          [
+            "get",
+            "arrngAgl"
+          ]
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "dspPos"
+          ],
+          "LT",
+          "top-left",
+          "CT",
+          "top",
+          "RT",
+          "top-right",
+          "LC",
+          "left",
+          "CC",
+          "center",
+          "RC",
+          "right",
+          "LB",
+          "bottom-left",
+          "CB",
+          "bottom",
+          "RB",
+          "bottom-right",
+          "left"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(255, 255, 255)",
+        "text-halo-color": "rgb(0, 0, 0)",
+        "text-halo-width": 2
+      }
+    },
+    {
+      "id": "sky",
+      "type": "sky",
+      "paint": {
+        "sky-type": "atmosphere",
+        "sky-atmosphere-sun": [
+          0,
+          0
+        ],
+        "sky-atmosphere-sun-intensity": 15
+      }
+    },
+    {
+      "id": "zfxy",
+      "source": "zfxy",
+      "source-layer": "zfxy",
+      "type": "fill-extrusion",
+      "paint": {
+        "fill-extrusion-base": [
+          "get",
+          "base"
+        ],
+        "fill-extrusion-height": [
+          "get",
+          "height"
+        ],
+        "fill-extrusion-color": [
+          "match",
+          [
+            "get",
+            "parity"
+          ],
+          0,
+          [
+            "rgb",
+            0,
+            255,
+            255
+          ],
+          [
+            "rgb",
+            255,
+            255,
+            0
+          ]
+        ],
+        "fill-extrusion-opacity": 0.7
+      }
+    }
+  ]
+}

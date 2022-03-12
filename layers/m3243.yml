@@ -1,0 +1,44 @@
+id: m3243
+type: symbol
+source: ise
+source-layer: m3243
+layout:
+  text-font: 
+    - Roboto Regular
+  text-field:
+    - get
+    - name
+  text-max-width: 16
+  text-rotation-alignment: map
+  text-rotate: 
+    - '*'
+    - -1
+    - - get
+      - arrngAgl
+  text-anchor:
+    - match
+    - - get
+      - dspPos
+    - LT
+    - top-left
+    - CT
+    - top
+    - RT
+    - top-right
+    - LC
+    - left
+    - CC
+    - center
+    - RC
+    - right
+    - LB
+    - bottom-left
+    - CB
+    - bottom
+    - RB
+    - bottom-right
+    - left
+paint: 
+  text-color: rgb(255, 255, 255)
+  text-halo-color: rgb(0, 0, 0)
+  text-halo-width: 2

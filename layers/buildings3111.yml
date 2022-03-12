@@ -1,0 +1,19 @@
+source: gsibv-vectortile-source-1-4-16
+minzoom: 14
+id: buildings3111
+metadata:
+  name: 普通無壁舎
+type: fill-extrusion
+source-layer: building
+filter:
+  - all
+  - - '=='
+    - ftCode
+    - 3111
+  - - '=='
+    - $type
+    - Polygon
+paint:
+  fill-extrusion-color: rgb(255,230,190)
+  fill-extrusion-opacity: 0.8
+  fill-extrusion-height: 6
