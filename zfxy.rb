@@ -1,4 +1,5 @@
-H = 2 ** 25
+Z_ONE = 25
+H = 2 ** Z_ONE
 
 def n(z)
   2 ** z
@@ -28,7 +29,11 @@ def point2zfxy(z, h, lng, lat)
 end
 
 def f2height(z, f)
-  f * H / n(z)
+  if z > Z_ONE
+    f.to_f * H / n(z)
+  else
+    f * H / n(z)
+  end
 end
 
 def x2lng(z, x)
