@@ -74,7 +74,7 @@ def zfxy2geojson(z, f, x, y)
     },
     :properties => {
       :base => f2height(z, f),
-      :height => f2height(z, 1),
+      :height => f2height(z, f + 1),
       #:code => "#{z}/#{f}/#{x}/#{y}",
       :z => z,
       :f => f,
